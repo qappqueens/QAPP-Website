@@ -1,0 +1,39 @@
+body, html{
+	height:100%;
+}
+.navbar-custom{
+
+	opacity: 0.9;
+}
+.text-color li a{
+	color: white;
+}
+.text-color li a:hover{
+	color:black;
+	background: red;
+}
+.full-page{
+	height: 100%;
+}
+.full-page2{
+	background-color: white;
+	height: 75%;
+}
+.full-page3{
+	background-color: red;
+	height: 25%;
+}
+#footer {
+	background-color: #f5f5f5;
+	height: 60px;
+  }
+
+  /* Lastly, apply responsive CSS fixes as necessary */
+  @media (max-width: 767px) {
+	#footer {
+	  margin-left: -20px;
+	  margin-right: -20px;
+	  padding-left: 20px;
+	  padding-right: 20px;
+	}
+  }
