@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact Us | QAPP</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+	<style>
+	<!-- 
+	Tenporary nav bar and footer until CSS and background
+	image is added 
+	-->
+	#footer {
+		background-color: #f5f5f5;
+		height: 60px;
+	  }
+	  
+	.navbar-custom{
+		opacity: 0.9;
+	  }
+
+	
+	
+	</style>
+  </head>
+<body>
+	
+	<!-- Nav Bar -->
+<nav class="navbar navbar-fixed-top navbar-custom">
+
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" ><img src="assets/img/logo_white.png"> </a>
+
+    </div>
+    
+    <div class="collapse navbar-collapse text-color" id="bs-example-navbar-collapse-1">
+
+    <ul class="nav navbar-nav navbar-left">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Current Projects</a></li>
+    </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Social Media</a></li>
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social Media <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li> -->
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- 
+
+	Different formatting (WIP):
+	
+	<div class="row" style="width:60%; margin-left: auto; margin-right: auto; margin-bottom: 3%;">
+	
+		<div class="col-md-6">
+			<div class="well">
+			<p>Address:</p>
+			<p>Phone:</p>
+			<p>Email:</p>
+			</div>
+		</div>
+		
+		<div class = "col-md-6">
+		</div>
+		
+		
+	</div>
+	
+-->
+	<h1 style="text-align: center; margin-top:5%;">Contact Us!</h1>
+		
+	<!-- First Well -->
+	<div class="well" style="width:60%; margin-top: 3%; margin-right: auto; margin-left:auto">
+		<p>Address:</p>
+		<p>Phone:</p>
+		<p>Email:</p>
+	</div>
+	
+	<!-- Columns with twitter and facebook icons -->
+	<div class="row" style="width:60%; margin-left: auto; margin-right: auto; margin-bottom: 3%;">
+		  <div class="col-md-6">
+			<a href="">
+				<img class="center-block" src="http://www.freepngimg.com/download/twitter/9-2-twitter-high-quality-png.png" height="150px" style="float:right; margin-right:3%"/>
+			</a>
+		  </div>
+		  <div class="col-md-6">
+			<a href="">
+				<img class="center-block" src="http://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png" height="150px" style="float:left; margin-left:3%" />
+			</a>
+		  </div>
+	</div>
+	
+	<!-- Email form -->
+	<div class="container-fluid">
+		<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<div class="well well-sm">
+						<form>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="name">
+										Name</label>
+									<input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+								</div>
+								<div class="form-group">
+									<label for="email">
+										Email Address</label>
+									<div class="input-group">
+										<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+										</span>
+										<input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="name">
+										Message</label>
+									<textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+										placeholder="Message"></textarea>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+									Send Message</button>
+							</div>
+						</div>
+						</form>
+					</div>
+				</div>
+		</div>
+		
+		
+		<!-- Google Maps Iframe-->
+	<div class="center">
+		<iframe style="margin-bottom:5%; margin-top:3%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2858.9715178872484!2d-76.49976913457795!3d44.22824477910575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2ab05b39827d1%3A0xf59759e3c0d043e1!2sGoodes+Hall%2C+143+Union+St+W%2C+Kingston%2C+ON+K7L+2P3!5e0!3m2!1sen!2sca!4v1509312922889" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen>
+		</iframe>	
+	</div>
+		
+	
+    <div id="footer">
+		<div class="container">
+			<br>
+			<p class="muted credit">Rights Reserved by Queen's Application Development Society</p>
+		</div>
+    </div>
+  
+</body>
+</html>
