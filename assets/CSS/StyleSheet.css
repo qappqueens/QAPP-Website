@@ -1,0 +1,54 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image-opacity: .2;
+    color: white;
+
+}
+
+h1{
+    margin-left:30px;
+}
+
+
+#particles-js{
+
+
+    height: auto;
+    witdh: 100%;
+
+
+}
+
+.well{
+    padding:20px;
+    align:centered;
+    text-align: center;
+    color:white;
+    background-color: #033159;
+}
+#answerWell{
+    padding:20px;
+    align:centered;
+    text-align: center;
+    color:#033159;
+    background-color: white;
+}
+#noPadding{
+
+    padding:0px;
+}
+
+.glyphicon {
+    font-size: 40px;
+    color:white;
+}
+
+.border{
+    border-bottom: solid;
+    border-color: red;
+
+
+}
