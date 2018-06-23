@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login (Rename)</title>
+	
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+	
+	<style>
+	.card {
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		font-family: 'Karla', sans-serif;
+		color: black;
+		}
+	
+	html, body {
+		height:100%;
+		}
+
+	.card-title{
+		font-size: 3.5em;
+		font-weight: 900;
+		}
+
+	.new-body {
+		  display:flex;
+		  align-items:center;
+		}
+
+	input{
+		border-color:white;
+		border:none;
+		font-size:13px;
+		width: 200px;
+		color: black;
+		margin-left:5px;
+		margin-top: 35px;
+		}
+
+	.input-row{
+		display:block;
+		margin-left: 20px;
+		margin-right: 20px;
+		width: 250px;
+	}
+	
+	.get-started{
+		background-color: black; 
+		border-radius: 0px; 
+		color:white;
+		margin-left: 0 auto;
+		margin-right: 0 auto;
+		width: 300px;
+		height:50px;
+		margin-top:80px;
+	}
+	
+	.next{
+		background-color: black; 
+		border-radius: 0px; 
+		color:white;
+		margin-left: 0 auto;
+		margin-right: 0 auto;
+		width: 300px;
+		height:50px;
+		margin-top:50px;
+	}
+	
+	.top-btn{
+		color:white;
+		font-size: 3em;
+		font-family: 'Karla', sans-serif;
+		display: inline-block;
+		width:200px;
+		margin-top:3%;
+		margin-bottom:3%;
+	}
+	
+	.parent{
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+	
+	.login-btn{
+		text-align:left;
+	}
+	
+	.sign-btn{
+		text-align:right;
+	}
+
+	</style>
+	
+  </head>
+  <body background="red.jpg">
+  
+	  <div class="parent">
+		<p class="login-btn top-btn" onclick="login()"><span id="login-text" style="border-bottom: 2px solid white;">Login</span></p>
+		<p class="sign-btn top-btn" onclick="signIn()" ><span id="sign-up" style="opacity:0.5;">Sign Up</span></p>
+	  </div>
+	  
+	  <script>
+		  function signIn(){
+		  document.getElementById("login").style.display = "none";
+		  document.getElementById("login-text").style.border = "0";
+		  document.getElementById("login-text").style.opacity = "0.5";
+		  document.getElementById("sign-up").style.opacity = "1.0";
+		  document.getElementById("sign-up").style.borderBottom = "2px solid white";
+		  document.getElementById("signup").style.display = "inline";
+		  }
+		  
+		  function login(){
+		  document.getElementById("signup").style.display = "none";
+		  document.getElementById("sign-up").style.border = "0";
+		  document.getElementById("sign-up").style.opacity = "0.5";
+		  document.getElementById("login-text").style.opacity = "1.0";
+		  document.getElementById("login-text").style.borderBottom = "2px solid white";
+		  document.getElementById("login").style.display = "initial";
+		  }
+	  </script>
+
+	
+	<div class="new-body">
+		<div class="card" id="login" style="width: 18rem; background-color:white; width: 350px; height: 455px;">
+			<div class="card-body">
+				<h5 class="card-title" style="text-align: center; margin-top: 88px; ">Conference</h5>
+				<div class="container" style="width:350px;">
+				
+					<div class="input-row" style="margin-top:40px;">
+						<span class="glyphicon glyphicon-user" style="color: #00ffcb"></span>
+						<input type="text" placeholder="Username" name="uname" required>
+					</div>
+			
+					<div class="input-row">
+						<span class="glyphicon glyphicon-pencil" style="color: #00ffcb"></span>
+						<input type="password" placeholder="Password" name="psw" required>
+					</div> 
+			
+				</div>
+			
+				<div class="text-center">
+					<button type="button" class="btn btn-primary get-started" style="">Get Started</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="card" id="signup" style="width: 18rem; background-color:white; width: 350px; height: 455px; display:none;">
+			<div class="card-body">
+				<span class="glyphicon glyphicon-camera" style="color: #00ffcb;font-size: 20px; display:block; text-align:right; margin-right:30px; margin-top:10px"></span>
+				<img src="user.png" alt="user" width="100px" style="display:block; margin-left: auto; margin-right: auto; margin-top:30px;">
+				<div class="container" style="width:350px;">
+				
+					<div class="input-row" style="margin-top:10px;">
+						<span class="glyphicon glyphicon-user" style="color: #00ffcb"></span>
+						<input type="text" placeholder="Name" name="name" required>
+					</div>
+					
+					<div class="input-row">
+						<span class="glyphicon glyphicon-envelope" style="color: #00ffcb"></span>
+						<input type="text" placeholder="Email" name="email" required>
+					</div> 
+					
+					<div class="input-row">
+						<span class="glyphicon glyphicon-pencil" style="color: #00ffcb"></span>
+						<input type="password" placeholder="Password" name="psw" required>
+					</div> 
+				</div>
+				
+				<div class="text-center">
+					<button type="button" class="btn btn-primary next" style="">Next</button>
+				</div>
+			</div>
+		</div>
+	</div>  
+  </body>
+</html>
